@@ -73,7 +73,7 @@ def play(player_decks, card_in_play, c_count_dis, turn, comp_player):
 
             card_in_play = do_action(top_discard, player_decks, deck, turn)
 
-            os.system("clear")
+            os.system('cls' if os.name == 'nt' else 'clear')
             print(f"Top card:\n{top_discard.colour, top_discard.face}\n")
             
             #If statement checks for wild card then stays on player who didnt play the card
